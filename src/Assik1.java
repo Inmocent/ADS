@@ -141,7 +141,6 @@ class ReverseSequence {
         int currentElement = sc.nextInt();
 
         printInReverse(n - 1, sc);
-        // lifo order
         System.out.print(currentElement + " ");
     }
 
