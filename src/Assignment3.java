@@ -94,9 +94,7 @@ public class Assignment3 {
         userInput.close();
     }
 
-    // ==========================================
-    // TASK 1: Anagram Checker (Uses Bubble Sort)
-    // ==========================================
+//t1
     public static boolean checkIfAnagrams(String firstWord, String secondWord) {
         if (firstWord.length() != secondWord.length()) {
             return false;
@@ -129,9 +127,7 @@ public class Assignment3 {
         }
     }
 
-    // ==========================================
-    // TASK 2: K-th Smallest (Uses Quick Sort)
-    // ==========================================
+//t2
     public static int findKthSmallestElement(int[] numbers, int k) {
         sortWithQuickSort(numbers, 0, numbers.length - 1);
         return numbers[k - 1]; // Pick element at index k-1 as requested in the document
@@ -170,9 +166,7 @@ public class Assignment3 {
         return rightScanPointer;
     }
 
-    // ==========================================
-    // TASK 3: Median Element (Uses Merge Sort)
-    // ==========================================
+//t3
     public static int calculateMedian(int[] numbers) {
         int[] auxiliaryArray = new int[numbers.length];
         performMergeSort(numbers, auxiliaryArray, 0, numbers.length - 1);
@@ -211,9 +205,7 @@ public class Assignment3 {
         }
     }
 
-    // ==========================================
-    // TASK 4: Optimal Shipping Capacity (Binary Search)
-    // ==========================================
+ // t4
     public static int findOptimalShippingCapacity(int[] weights, int targetDays) {
         int maximumSingleWeight = 0;
         int totalWeightSum = 0;
